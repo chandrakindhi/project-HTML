@@ -1,0 +1,205 @@
+Log in
+
+Sign up
+Fix the bugs in below snippet
+    <html lang="en">
+    <head>
+        <title>Document
+            <body>
+                guvi
+        </title>
+    </head>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </body>
+    </html>
+ChatGPT
+It looks like the HTML snippet you provided has several issues. I'll correct them for you:
+
+The <title> tag is not closed properly.
+The <body> tag is not properly placed; it should be inside the <head> section and not within the <title> tag.
+The <div> elements are misplaced, and the opening and closing tags are not properly structured.
+Here's the corrected version of your HTML snippet:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+Explanation of the Fixes:
+Document Type Declaration: Added <!DOCTYPE html> to specify the HTML5 document type.
+
+Meta Tags: Added <meta charset="UTF-8"> and <meta name="viewport" content="width=device-width, initial-scale=1.0"> to ensure proper character encoding and responsive design.
+
+Properly Closed <title> Tag: Moved the closing </title> tag to properly close the title element.
+
+Correct Placement of <body> Tag: Moved the <body> tag to be correctly placed within the <html> structure, and ensured it is not nested within the <title> tag.
+
+Proper Nesting of <div> Tags: Made sure that all <div> tags are properly nested and closed.
+
+This should provide you with a valid and properly structured HTML document.
+
+Fix the bugs in below snippet
+    <html lang="en">
+    <head>
+        <title>Document
+            <body>
+                guvi
+        </title>
+    </head>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </body>
+    </html>
+ChatGPT
+Certainly! Let's fix the issues in the HTML snippet you provided. The snippet has several problems including improper nesting and incorrect placement of tags. Here's the corrected version:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+Explanation of the Fixes:
+Document Type Declaration: Added <!DOCTYPE html> at the beginning to specify that this is an HTML5 document.
+
+Meta Tags: Added <meta charset="UTF-8"> to ensure proper character encoding and <meta name="viewport" content="width=device-width, initial-scale=1.0"> for responsive design.
+
+Properly Closed <title> Tag: Closed the <title> tag correctly. The content of the title should be inside the <title> tag, and the tag should be properly closed.
+
+Correct Placement of <body> Tag: Moved the <body> tag out of the <title> tag and placed it inside the <head> section.
+
+Proper Nesting and Closing of Tags: Ensured all tags are properly nested and closed:
+
+Closed the <body> tag correctly.
+Ensured that <div> tags are properly nested and closed.
+Moved the <body> tag to the correct place inside the <html> element.
+This corrected version ensures that your HTML is well-structured and adheres to standard practices.
+
+Design a contact us form with all fields as required.
+ChatGPT
+Certainly! Below is a simple and functional "Contact Us" form designed using HTML. This form includes all necessary fields and utilizes the required attribute to ensure that users fill out each field before submitting.
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
